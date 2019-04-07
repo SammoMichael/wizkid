@@ -1,13 +1,15 @@
 
 import React, { Component } from 'react';
 // import logo from './logo.svg';
-// import night from './morning.svg'
+import dark from './dark.svg'
 // import day from './night.svg'
 import flower from './flower.png'
 import clock from './clock.png'
 import island from './island.png'
 import rock from './rock.jpg'
+import rock2 from './skull2.gif'
 import monster from './green-eye.gif'
+import monster2 from './monster.gif'
 import './App.css';
 import Speed from './components/speed/speed';
 import Timer from './components/timer/Timer'
@@ -42,7 +44,7 @@ state = {
       {/* <audio autoplay><source src="music.mp3" type="audio/mpeg" /></audio> */}
         <audio src="music.mp3" className="audio" id="audio"></audio>
         
-        {/* <img src={night} className="bg-image" alt="bg" /> */}
+        {/* <img src={dark} className="bg-image" alt="bg" /> */}
         <Speed props={this.state.data}/>
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
        < div className = "bg" >
@@ -54,6 +56,8 @@ state = {
         <img src={island} className="island3" alt="island3" />
         <img src={island} className="island4" alt="island4" />
         <img src={clock} className="clock" alt="clock" />
+        <img src={monster2} className="monster2" alt="monster2" />
+        <img src={rock2} className="rock2" alt="rock2" />
         <img src={flower} className="flower" alt="flower" />
         <audio src=".music.mp3" controls> <embed src=".music.mp3" width="300" height="90" loop="true" autostart="true" /></audio>
          <audio id="music">

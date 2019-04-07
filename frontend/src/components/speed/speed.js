@@ -7,6 +7,7 @@ export class Speed extends Component {
       this.state={ highlight: "highlight",prompt: prompt, innerHTML: '', new_state: '', index: 0, length: 0, errors: 0, __html: ''}
       this.handleKeyDown = this.handleKeyDown.bind(this);
       this.myMove = this.myMove.bind(this)
+      this.hisMove = this.hisMove.bind(this)
     }
 
     myMove() {
@@ -29,9 +30,29 @@ export class Speed extends Component {
         }
       }
     }
+    hisMove() {
+      var rock2 = document.getElementById("rock2");
+      var pos = 200;
+      var id = setInterval(frame, .1);
+
+      function frame() {
+        const rock2 = document.getElementsByClassName('rock2')[0];
+        if (pos === 1050) {
+          rock2.style.visibility = 'hidden';
+
+          clearInterval(id);
+        } else {
+          rock2.style.visibility = 'visible';
+          pos+=2;
+          rock2.style.top = 40 + 'px';
+          rock2.style.right = pos + 'px';
+        }
+      }
+    }
     componentDidMount() {
       var x = document.getElementsByClassName("audio")[0];
-
+      var id = setInterval(this.hisMove, 3000);
+      // this.hisMove()
       function playAudio() {
         x.play();
       }
