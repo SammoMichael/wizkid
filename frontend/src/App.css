@@ -1,0 +1,275 @@
+/* <span class="token keyword">function</span><span class="token function">binarySearch</span><span class="token punctuation">(</span><span class="token parameter">ar<span class="token punctuation">, </span> el<span class="token punctuation">, </span> compare_fn</span><span class="token punctuation">)</span><span class="token punctuation"> {
+  </span><span class="token keyword">var</span>m <span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;
+  </span><span class="token keyword">var</span>n <span class="token operator">=</span>ar<span class="token punctuation">.</span>length <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;
+  </span><span class="token keyword">while</span><span class="token punctuation">(</span>m <span class="token operator">&lt;
+
+  =</span> n<span class="token punctuation">)</span><span class="token punctuation"> {
+    </span><span class="token keyword">var</span>k <span class="token operator">=</span><span class="token punctuation">(</span>n <span class="token operator">+</span> m<span class="token punctuation">)</span><span class="token operator">>></span><span class="token number">1</span><span class="token punctuation">;
+    </span><span class="token keyword">var</span>cmp <span class="token operator">=</span><span class="token function">compare_fn</span><span class="token punctuation">(</span>el<span class="token punctuation">, </span> ar<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;
+
+    </span><span class="token keyword">if</span><span class="token punctuation">(</span>cmp <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation"> {
+      </span>m <span class="token operator">=</span>k <span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;
+      </span><span class="token punctuation">
+    }
+
+    </span><span class="token keyword">else</span><span class="token keyword">if</span><span class="token punctuation">(</span>cmp <span class="token operator">&lt;
+
+    </span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation"> {
+      </span>n <span class="token operator">=</span>k <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;
+      </span><span class="token punctuation">
+    }
+
+    </span><span class="token keyword">else</span><span class="token punctuation"> {
+      </span><span class="token keyword">return</span>k<span class="token punctuation">;
+      </span><span class="token punctuation">
+    }
+
+    </span><span class="token punctuation">
+  }
+
+  </span><span class="token keyword">return</span><span class="token operator">-</span>m <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;
+  </span><span class="token punctuation">
+}
+
+</span><span class="token keyword">function</span><span class="token function">compare_number</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">, </span> b</span><span class="token punctuation">)</span><span class="token punctuation"> {
+  </span><span class="token keyword">return</span>a <span class="token operator">-</span>b<span class="token punctuation">;
+  </span><span class="token punctuation">
+} */
+
+/* </span> */
+.bg {
+  /* background: url(./bg-morning.svg) no-repeat center center; */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-self: center;
+}
+.flower {
+  height: 125px;
+  width: 125px;
+  position: relative;
+  /* top: 130px; */
+  left: 90px;
+}
+.timer-box {
+
+}
+.rock {
+  height: 50px;
+  width: 50px;
+  visibility: hidden;
+}
+
+.island {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  bottom: 10px;
+  right: 200px;
+}
+.island2 {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  left: 450px;
+}
+.island5 {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  /* left: 650px; */
+
+}
+.island3 {
+  bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  left: 350px;
+  /* bottom: 60px; */
+}
+.island4 {
+  bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  left: 350px;
+  /* bottom: 60px; */
+}
+.clock {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  right: 400px;
+}
+.monster {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  height: 120px;
+  width: 100px;
+  bottom: 65px;
+  margin-left: 100px;
+  position: relative;
+
+}
+
+.App {
+  /* background: url(./bg-night.svg) no-repeat center center; */
+
+}
+html, body {
+
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  
+}
+.rock {
+position: relative;
+align-self: center;
+/* left: 200px; */
+}
+.speed {
+  min-width: 50px;
+  min-height: 50px;
+  /* margin: 50px; */
+  font-family: "Roboto";
+  font-size: 50px;
+  border-bottom: 10px solid aqua;
+
+}
+
+.feedback{
+  display: flex;
+  flex: 1;
+  flex-direction: column-reverse;
+  color: white;
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+  background-color: #166d3b;
+  background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
+}
+.errors{ 
+  display: flex;
+  flex-direction: column;
+  color: yellow;
+}
+.timer-box {
+  position: relative;
+  right: 525px;
+  font-family: 'Short Stack', cursive;
+  font-size: 36px;
+
+}
+.timer {
+  min-height: 45px;
+  min-width: 100px;
+  /* margin: 150px; */
+}
+.text {
+  /* background: url(./bg-morning.svg) no-repeat center center; */
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  letter-spacing: 3px;
+  overflow: scroll;
+  /* margin: 50px; */
+  display: flex;
+  /* font-family: 'Henny Penny', cursive; */
+  font-family: 'Short Stack', cursive;
+
+  height: 79vh;
+  width: 100vw;
+  /* margin: 500px; */
+  font-size: 40px;
+   white-space: pre-wrap;
+   text-align: left;
+
+}
+.parameter {
+  color: pink;
+}
+.highlight {
+  font-size: 30px;
+  background-color:rgb(40, 50, 180);
+  opacity: 1;
+  border: rgb(40, 50, 180) solid 5px;
+}
+.error {
+  font-size: 30px;
+  opacity: 1;
+  border: red solid 5px;
+  background-color: red;
+}
+
+
+.App {
+  /* background-image: image('./bg-morning'); */
+  display: flex;    
+  flex-direction: column;
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+.punctuation {
+  color: green;
+}
+
+.operator {
+  color: purple;
+}
+.keyword {
+  color: red;
+}
+
+.function {
+  color: orange;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
