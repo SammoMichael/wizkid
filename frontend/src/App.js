@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import dark from './dark.svg'
 // import day from './night.svg'
+import halfHeart from './half-heart.png'
+import fullHeart from './full-heart.png'
+import emptyHeart from './empty-heart.png'
 import flower from './flower.png'
 import clock from './clock.png'
 import island from './island.png'
@@ -48,9 +51,22 @@ state = {
         <Speed props={this.state.data}/>
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
        < div className = "bg" >
+       <div className='healthbar'>
+        <img src={fullHeart} className="full-heart1" alt="full-heart1" />
+        <img src={fullHeart} className="full-heart2" alt="full-heart2" />
+        <img src={fullHeart} className="full-heart3" alt="full-heart3" />
+        <img src={fullHeart} className="full-heart4" alt="full-heart4" />
+        <img src={fullHeart} className="full-heart5" alt="full-heart5" />
+        <img src={fullHeart} className="full-heart6" alt="full-heart6" />
+       
+       </div>
         <img src={monster} className="monster" alt="monster" />
         <img src={rock} className="rock" alt="rock" />
         <img src={island} className="island" alt="island" />
+        <div className="ending">
+        <div className="Over">Game Over!</div>
+        <div className="Won">You Won!</div>
+        </div>
         {/* <img src={island} className="island5" alt="island5" /> */}
         <img src={island} className="island2" alt="island2" />
         <img src={island} className="island3" alt="island3" />

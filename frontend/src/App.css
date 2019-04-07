@@ -37,6 +37,24 @@
 } */
 
 /* </span> */
+.Over {
+  
+}
+.Won {
+bottom: 100px;
+position: relative;
+}
+
+.ending {
+  position: relative;
+  left: 100px;
+  color: yellow;
+  letter-spacing: 5px;
+  position: absolute;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 60px;
+  visibility: hidden;
+}
 .bg {
   /* background: url(./dark.svg) no-repeat center center; */
   height: 100vh;
@@ -50,7 +68,7 @@
   position: relative;
   right: 70px;
   bottom: 20px;
-  /* top: 130px; */
+  /* top: 10px; */
   /* left: 90px; */
 }
 .right {
@@ -61,17 +79,23 @@ right: 200px;
 
 }
 .rock {
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   visibility: hidden;
 }
 .rock2 {
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   visibility: hidden;
   position: relative;
 }
-
+.gameOver {
+  /* position: absolute;
+  right: 200px;
+  bottom: 200px;
+  width: 500px;
+  height: 500px; */
+}
 .island {
   display: flex;
   flex-direction: row;
@@ -81,6 +105,35 @@ right: 200px;
   position: relative;
   bottom: 10px;
   right: 200px;
+}
+
+.full-heart1{
+  height: 40px;
+  background: url(./empty-heart.png) no-repeat;
+}
+.full-heart2{
+  height: 40px;
+  background: url(./empty-heart.png) no-repeat;
+}
+.full-heart3{
+  height: 40px;
+  background: url(./empty-heart.png) no-repeat;
+}
+.full-heart4{
+  height: 40px;
+  background: url(./empty-heart.png) no-repeat;
+}
+.full-heart5{
+  height: 40px;
+  background: url(./empty-heart.png) no-repeat;
+}
+.full-heart6{
+  height: 40px;
+  background: url(./empty-heart.png) no-repeat;
+}
+.full-heart{
+  height: 40px;
+  background: url(./empty-heart.png) no-repeat;
 }
 .island2 {
   z-index: 10;
@@ -158,7 +211,7 @@ right: 200px;
 
 }
 .dying {
-  animation: App-logo-spin infinite 2s ease-out;
+  animation: App-logo-spin 2s ease-out forwards;
 
 }
 .App {
@@ -209,7 +262,7 @@ align-self: center;
 .timer-box {
   bottom: 50;
   position: relative;
-  right: 900px;
+  right: 935px;
   font-family: 'Short Stack', cursive;
   font-size: 36px;
 
@@ -308,10 +361,10 @@ align-self: center;
   from {
     transform: rotate(0deg);
   }
-  to {
+  /* to {
     transform: rotate(360deg) scale(2);
     /* transform:  */
-  }
+  /* }  */
   to {
     transform: rotate(360deg) scale(0);
     /* transform:  */

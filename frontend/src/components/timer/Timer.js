@@ -15,7 +15,7 @@ export default class Timer extends Component {
     var minutes = Math.floor(this.state.timer / 60).toString()
     var secs = (this.state.timer % 60).toString().length !== 1 ? (this.state.timer % 60).toString() : "0" + (this.state.timer % 60).toString()
     var time = minutes + ":" + secs
-    time = minutes > 0 ? time : "Game Over!"
+    time = minutes > 0 ? time : "Time's Up!"
     window.time = this.state.timer 
     return (
       <div className="timer">
