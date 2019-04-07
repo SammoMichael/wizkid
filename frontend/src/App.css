@@ -48,10 +48,16 @@
   height: 125px;
   width: 125px;
   position: relative;
+  right: 70px;
+  bottom: 20px;
   /* top: 130px; */
-  left: 90px;
+  /* left: 90px; */
 }
-.timer-box {
+.right {
+display: flex;
+flex-direction: row;
+position: relative;
+right: 200px;
 
 }
 .rock {
@@ -77,13 +83,14 @@
   right: 200px;
 }
 .island2 {
+  z-index: 10;
   display: flex;
   flex-direction: row;
   align-self: flex-end;
   height: 200px;
   width: 200px;
   position: relative;
-  left: 450px;
+  left: 250px;
 }
 .island5 {
   display: flex;
@@ -103,7 +110,7 @@
   height: 200px;
   width: 200px;
   position: relative;
-  left: 350px;
+  left: 150px;
   /* bottom: 60px; */
 }
 .island4 {
@@ -114,7 +121,7 @@
   height: 200px;
   width: 200px;
   position: relative;
-  left: 350px;
+  left: 150px;
   /* bottom: 60px; */
 }
 .clock {
@@ -129,27 +136,31 @@
   display: flex;
   flex-direction: row;
   align-self: center;
-  height: 140px;
-  width: 120px;
-  bottom: 60px;
+  height: 170px;
+  /* width: 120px; */
+  bottom: 80px;
   margin-left: 100px;
   position: relative;
-
+  /* animation: App-logo-spin infinite 2s ease-out; */
 }
 .monster2 {
   display: flex;
   flex-direction: row;
   align-self: center;
-  height: 180px;
-  width: 150px;
-  bottom: 130px;
+  height: 200px;
+  /* width: 150px; */
+  bottom: 140px;
   right: 100px;
 
   /* left: 400px; */
   position: relative;
 
-}
 
+}
+.dying {
+  animation: App-logo-spin infinite 2s ease-out;
+
+}
 .App {
   background: url(./dark.svg) no-repeat center center;
   /* background: url(./bg-night.svg) no-repeat center center; */
@@ -220,7 +231,7 @@ align-self: center;
   /* font-family: 'Henny Penny', cursive; */
   font-family: 'Short Stack', cursive;
 
-  height: 79vh;
+  height: 93vh;
   width: 100vw;
   /* margin: 500px; */
   font-size: 40px;
@@ -298,6 +309,14 @@ align-self: center;
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg) scale(2);
+    /* transform:  */
+  }
+  to {
+    transform: rotate(360deg) scale(0);
+    /* transform:  */
+  }
+  to {
+    visibility: hidden;
   }
 }

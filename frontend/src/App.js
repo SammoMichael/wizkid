@@ -56,9 +56,11 @@ state = {
         <img src={island} className="island3" alt="island3" />
         <img src={island} className="island4" alt="island4" />
         <img src={clock} className="clock" alt="clock" />
+        <div className="right">
         <img src={monster2} className="monster2" alt="monster2" />
         <img src={rock2} className="rock2" alt="rock2" />
         <img src={flower} className="flower" alt="flower" />
+        </div>
         <audio src=".music.mp3" controls> <embed src=".music.mp3" width="300" height="90" loop="true" autostart="true" /></audio>
          <audio id="music">
           <source loop src=".music.mp3" type="audio/mp3" />
