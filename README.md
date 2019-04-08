@@ -12,9 +12,9 @@
 [![WizKid](https://github.com/SammoMichael/wizkid/blob/master/Screen%20Shot%202562-04-07%20at%204.40.06%20AM.png)](https://youtu.be/Zljcs7VcvIk)
 
 ## Inspiration
-###We wanted to make a fun game to get kids used to reading and writing code!
+### We wanted to make a fun game to get kids used to reading and writing code!
 ## What it does
-###It combines a speed-typing prompt with a platformer-style 2D animation with projectile attacks
+### It combines a speed-typing prompt with a platformer-style 2D animation with projectile attacks
 ## How we built it
 ### MERN Google App Engine JavaScript CSS3 HTML5 
 ## Challenges we ran into
